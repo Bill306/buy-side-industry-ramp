@@ -45,3 +45,7 @@
 ## 版本
 
 当前版本：`0.1.0`
+
+## License
+
+MIT License，Copyright © 2026 Bill306。
