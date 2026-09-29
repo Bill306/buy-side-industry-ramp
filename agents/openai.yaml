@@ -1,4 +1,4 @@
 interface:
   display_name: "买方新行业上手"
-  short_description: "帮助买方研究员快速建立陌生行业的研究框架、信号过滤与覆盖能力"
+  short_description: "从连该问什么都不知道，到四周搭起可跟踪、可建模的新行业框架"
   default_prompt: "使用 $buy-side-industry-ramp 帮我从现有覆盖行业迁移到一个新行业，并建立可验证的研究与跟踪体系。"
