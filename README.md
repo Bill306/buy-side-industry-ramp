@@ -1,51 +1,50 @@
-# 买方研究员新行业上手 Skill
+# Buy-Side Industry Ramp
 
-你在熟悉的行业里像一台雷达：一条新闻扫过去，就知道它重要不重要。可一旦换到陌生赛道，几百篇研报、电话会和产业新闻同时涌来，术语越记越多，却连该问什么、该信什么、什么变量最后会进入利润都说不清。
+**English** · [简体中文](README.zh-CN.md)
 
-很多研究员不是不够勤奋，而是缺少一张行业导航图和一套信息过滤器。
+A new sector. A mountain of reading. Where do you point your curiosity first?
 
-`buy-side-industry-ramp` 就从这个时刻开始。它帮助买方研究员把旧行业积累的能力翻译到新赛道，在三至四周内建立一套可验证、可更新的覆盖体系：从新旧框架迁移审计、行业因果地图、产业链与利润池，一路走到关键指标、信号过滤、公司矩阵、简化模型、共识与预期差，以及持续跟踪清单。
+```mermaid
+flowchart LR
+  A[Unfamiliar industry] --> B[Causal map and sources]
+  B --> C[Metrics and company matrix]
+  C --> D[Model and evidence gaps]
+  D --> E[Continuing coverage]
+```
 
-最终目标不是“读过很多”，而是当基金经理突然问起这个行业时，你能讲清它怎么赚钱、市场可能算错了什么，以及什么证据会推翻你的判断。
+This Agent Skill helps a researcher build a usable coverage framework for an unfamiliar industry over a three-to-four-week learning plan. It connects terminology and news to the variables that reach revenue, profit, cash flow, and expectations.
 
-## 适用场景
+## The research journey
 
-- 从消费、周期或金融等熟悉领域进入科技、医药或其他陌生行业；
-- 在三至四周内搭建一个新赛道的正式覆盖框架；
-- 面对大量研报、纪要和新闻时判断哪些信息值得继续研究；
-- 把行业事件连接到公司收入、利润、现金流和估值预期；
-- 检查自己是否已经具备独立覆盖能力。
+- Audit which habits transfer from your previous sector.
+- Draw the industry's causal map, value chain, and profit pools.
+- Identify useful sources, key indicators, and signal filters.
+- Build a company matrix and a simplified operating model.
+- Examine consensus, differentiated views, and evidence that would change your mind.
+- Finish with a continuing coverage checklist.
 
-## 使用示例
+The plan provides structure; coverage readiness depends on the evidence and work completed.
 
-```text
-使用 $buy-side-industry-ramp。我原来覆盖消费，现在要在四周内建立光模块行业覆盖，每周可以投入 8 小时，最终需要做一次内部汇报。
+## Install and start
+
+Clone this repository and place its root in your agent's skills directory, with `SKILL.md` discoverable.
+
+```bash
+git clone https://github.com/Bill306/buy-side-industry-ramp.git
 ```
 
 ```text
-使用 $buy-side-industry-ramp，帮我快速搭建创新药行业的因果地图、信息源和关键指标，先不要做具体公司估值。
+Use $buy-side-industry-ramp. I previously covered consumer companies and
+have four weeks to establish optical-module coverage, with eight hours
+per week and an internal presentation as the deliverable.
 ```
 
-```text
-使用 $buy-side-industry-ramp，审查我现有的半导体设备研究框架，指出哪些内容还不足以称为覆盖就绪。
-```
+You can also request an industry map, information sources, or an audit of an existing framework without valuing individual companies.
 
-## 目录
+## Inside
 
-- `SKILL.md`：入口、工作流、证据要求和完成标准；
-- `references/industry-archetypes.md`：不同类型行业的研究入口与关键变量；
-- `references/ramp-up-playbook.md`：三至四周建立覆盖的执行计划；
-- `references/output-templates.md`：行业地图、信号卡、公司矩阵和最终底稿模板；
-- `agents/openai.yaml`：Codex 界面元数据。
+[SKILL.md](SKILL.md) defines the workflow, evidence requirements, and completion criteria. References cover [industry archetypes](references/industry-archetypes.md), the [ramp-up playbook](references/ramp-up-playbook.md), and [output templates](references/output-templates.md).
 
-## 设计来源
+The framework develops ideas from practitioner discussions about entering a new coverage area. Company claims, industry figures, and current conditions must be refreshed from primary evidence for each assignment.
 
-本 Skill 提炼自“研究员如何拓展新行业”的实践讨论，并将其中的行业导航、信息滤噪、预期差和输出训练扩展为跨行业框架。文中具体公司的判断、行业数字和平台宣传没有作为长期事实写入 Skill；实际研究必须重新获取当前的一手证据。
-
-## 版本
-
-当前版本：`0.1.0`
-
-## License
-
-MIT License，Copyright © 2026 Bill306。
+Version `0.1.0`. [MIT License](LICENSE).
